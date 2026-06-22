@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+  <title>RRI Inventory</title>
+  <meta name="description" content="Sistem Informasi Manajemen Aset, Inventaris, Logistik, Peminjaman, Pemindahan, Booking Ruangan, dan Manajemen Acara RRI" />
+  <meta name="theme-color" content="#1a73e8" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📻</text></svg>" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Chart.js untuk dashboard -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+  <script>
+    // Konfigurasi GAS Web App URL.
+    // GANTI dengan URL deployment Google Apps Script Anda, atau biarkan kosong
+    // dan konfigurasikan melalui halaman Login / Pengaturan setelah deploy.
+    window.GAS_URL = '';
+  </script>
+</head>
+<body>
+  <div id="app">
+    <div class="loading-placeholder">
+      <div class="spinner"></div>
+      <p>Memuat RRI Inventory...</p>
+    </div>
+  </div>
+
+  <!-- Core layer -->
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/api.js"></script>
+
+  <!-- Modules -->
+  <script src="assets/js/modules/dashboard.js"></script>
+  <script src="assets/js/modules/barang.js"></script>
+  <script src="assets/js/modules/pengguna.js"></script>
+  <script src="assets/js/modules/peminjaman.js"></script>
+  <script src="assets/js/modules/estafet.js"></script>
+  <script src="assets/js/modules/booking.js"></script>
+  <script src="assets/js/modules/scanner.js"></script>
+
+  <!-- App bootstrap (must load last) -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
